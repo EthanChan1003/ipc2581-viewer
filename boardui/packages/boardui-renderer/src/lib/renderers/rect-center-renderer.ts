@@ -24,12 +24,14 @@ export class RectCenterRenderer extends RendererBase<RectCenter> {
         part.fillDesc instanceof FillDescRef
           ? reusablesProvider.getFillDescById(part.fillDesc.id)
           : part.fillDesc;
-      const fillDescAttributes = getFillDescSVGAttributes(
-        fillDesc,
-        reusablesProvider
-      );
-      for (const fillDescAttribute of fillDescAttributes) {
-        partElement.setAttribute(...fillDescAttribute);
+      if (fillDesc) {
+        const fillDescAttributes = getFillDescSVGAttributes(
+          fillDesc,
+          reusablesProvider
+        );
+        for (const fillDescAttribute of fillDescAttributes) {
+          partElement.setAttribute(...fillDescAttribute);
+        }
       }
     }
 
@@ -38,9 +40,13 @@ export class RectCenterRenderer extends RendererBase<RectCenter> {
         part.lineDesc instanceof LineDescRef
           ? reusablesProvider.getLineDescById(part.lineDesc.id)
           : part.lineDesc;
-      const lineDescAttributes = getLineDescSVGAttributes(lineDesc);
-      for (const lineDescAttribute of lineDescAttributes) {
-        partElement.setAttribute(...lineDescAttribute);
+      if (lineDesc) {
+        const lineDescAttributes = getLineDescSVGAttributes(lineDesc);
+        for (const lineDescAttribute of lineDescAttributes) {
+          partElement.setAttribute(...lineDescAttribute);
+        }
+      } else {
+        partElement.setAttribute('stroke-width', '0');
       }
     } else {
       partElement.setAttribute('stroke-width', '0');

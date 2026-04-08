@@ -24,12 +24,18 @@ export class LineRenderer extends RendererBase<Line> {
         part.lineDesc instanceof LineDescRef
           ? reusablesProvider.getLineDescById(part.lineDesc.id)
           : part.lineDesc;
-      const lineDescAttributes = getLineDescSVGAttributes(lineDesc);
-      for (const lineDescAttribute of lineDescAttributes) {
-        partElement.setAttribute(...lineDescAttribute);
+      if (lineDesc) {
+        const lineDescAttributes = getLineDescSVGAttributes(lineDesc);
+        for (const lineDescAttribute of lineDescAttributes) {
+          partElement.setAttribute(...lineDescAttribute);
+        }
+      } else {
+        partElement.setAttribute('stroke', 'currentColor');
+        partElement.setAttribute('stroke-width', '0.1');
       }
     } else {
-      partElement.setAttribute('stroke-width', '0');
+      partElement.setAttribute('stroke', 'currentColor');
+      partElement.setAttribute('stroke-width', '0.1');
     }
   }
 }

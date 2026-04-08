@@ -56,9 +56,11 @@ export class ComponentRenderer extends RendererBase<Component> {
         pckg.outline.lineDesc instanceof LineDescRef
           ? reusablesProvider.getLineDescById(pckg.outline.lineDesc.id)
           : pckg.outline.lineDesc;
-      const lineDescAttributes = getLineDescSVGAttributes(lineDesc);
-      for (const lineDescAttribute of lineDescAttributes) {
-        outlineEle.setAttribute(...lineDescAttribute);
+      if (lineDesc) {
+        const lineDescAttributes = getLineDescSVGAttributes(lineDesc);
+        for (const lineDescAttribute of lineDescAttributes) {
+          outlineEle.setAttribute(...lineDescAttribute);
+        }
       }
       const path = getPolygonPath(pckg.outline.polygon, []);
       outlineEle.setAttribute('d', path);

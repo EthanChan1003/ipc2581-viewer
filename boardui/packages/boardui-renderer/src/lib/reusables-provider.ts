@@ -20,13 +20,15 @@ export interface ReusablesProvider {
 
   /** Provides line desctiptor element.
    * @param lineDescId line descriptor identifier.
+   * @returns LineDesc or null if not found (dictionary is optional in IPC-2581)
    */
-  getLineDescById(lineDescId: string): LineDesc;
+  getLineDescById(lineDescId: string): LineDesc | null;
 
   /** Provides fill desctiptor element.
    * @param fillDescId fill descriptor identifier.
+   * @returns FillDesc or null if not found (dictionary is optional in IPC-2581)
    */
-  getFillDescById(fillDescId: string): FillDesc;
+  getFillDescById(fillDescId: string): FillDesc | null;
 
   /** Provides predefined primitive.
    * @param primitiveId Primitive identifier.

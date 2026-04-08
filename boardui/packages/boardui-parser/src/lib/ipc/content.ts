@@ -19,4 +19,5 @@ export class Content {
   dictionaryLineDesc: Dictionary<LineDesc> = null!;
   dictionaryFillDesc: Dictionary<FillDesc> = null!;
   dictionaryStandard: Dictionary<StandardPrimitive> = null!;
+  dictionaryUser: Dictionary<StandardPrimitive> = null!;
 }

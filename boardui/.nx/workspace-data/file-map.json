@@ -24,117 +24,83 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".editorconfig",
-        "hash": "11532813898455409296"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "7908151813900000173"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "5519981940544710039"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "6820402234827505055"
-      },
-      {
-        "file": ".vscode/launch.json",
-        "hash": "11709769269929457149"
+        "file": "package.json",
+        "hash": "13420115956539632622"
       },
       {
         "file": "README.md",
         "hash": "6248138303415033869"
       },
       {
-        "file": "eslint.config.mjs",
-        "hash": "7790611305998582172"
+        "file": "tools/tsconfig.tools.json",
+        "hash": "11810713488198132402"
       },
       {
-        "file": "jest.config.ts",
-        "hash": "3407785570333453138"
-      },
-      {
-        "file": "jest.preset.js",
-        "hash": "18017397988741459412"
-      },
-      {
-        "file": "nx.json",
-        "hash": "4452052495401389955"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "3179981491178449970"
-      },
-      {
-        "file": "package.json",
-        "hash": "5447492837129933501"
+        "file": "testxml/MiniPC.xml",
+        "hash": "8911018873115048883"
       },
       {
         "file": "packages/.gitkeep",
         "hash": "3244421341483603138"
       },
       {
-        "file": "tools/tsconfig.tools.json",
-        "hash": "11810713488198132402"
+        "file": "eslint.config.mjs",
+        "hash": "13724677598309737605"
+      },
+      {
+        "file": "testxml/Flash.xml",
+        "hash": "15433993401858357361"
+      },
+      {
+        "file": ".vscode/launch.json",
+        "hash": "11709769269929457149"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "7908151813900000173"
       },
       {
         "file": "tsconfig.base.json",
-        "hash": "9729614432576782902"
+        "hash": "2268986191887522643"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "11532813898455409296"
+      },
+      {
+        "file": "nx.json",
+        "hash": "13981409483676184579"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "3990329249799966690"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "5519981940544710039"
+      },
+      {
+        "file": "review_diff.txt",
+        "hash": "4643261097321983740"
+      },
+      {
+        "file": "testxml/WiFi_panel.xml",
+        "hash": "755431567661080176"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "3407785570333453138"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "6820402234827505055"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "18017397988741459412"
       }
     ],
     "projectFileMap": {
-      "boardui-demo-e2e": [
-        {
-          "file": "packages/boardui-demo-e2e/cypress.config.ts",
-          "hash": "10128070837426886452",
-          "deps": [
-            "npm:cypress",
-            "npm:@nx/cypress"
-          ]
-        },
-        {
-          "file": "packages/boardui-demo-e2e/eslint.config.mjs",
-          "hash": "13149698884765331902",
-          "deps": [
-            "npm:@eslint/eslintrc",
-            "npm:@eslint/js"
-          ]
-        },
-        {
-          "file": "packages/boardui-demo-e2e/project.json",
-          "hash": "16626228140556987003"
-        },
-        {
-          "file": "packages/boardui-demo-e2e/src/assets/testcase3-RevC-Assembly.xml",
-          "hash": "13718509918206281054"
-        },
-        {
-          "file": "packages/boardui-demo-e2e/src/e2e/app.cy.ts",
-          "hash": "4936148506865692904"
-        },
-        {
-          "file": "packages/boardui-demo-e2e/src/fixtures/example.json",
-          "hash": "17341819486505642070"
-        },
-        {
-          "file": "packages/boardui-demo-e2e/src/support/app.po.ts",
-          "hash": "9029757912918485685"
-        },
-        {
-          "file": "packages/boardui-demo-e2e/src/support/commands.ts",
-          "hash": "11031723810997510506"
-        },
-        {
-          "file": "packages/boardui-demo-e2e/src/support/e2e.ts",
-          "hash": "15928825062325902088"
-        },
-        {
-          "file": "packages/boardui-demo-e2e/tsconfig.json",
-          "hash": "15819154737716378212"
-        }
-      ],
       "boardui-core": [
         {
           "file": "packages/boardui-core/README.md",
@@ -142,7 +108,7 @@
         },
         {
           "file": "packages/boardui-core/eslint.config.mjs",
-          "hash": "12196609265683223958"
+          "hash": "9162592108266142913"
         },
         {
           "file": "packages/boardui-core/jest.config.ts",
@@ -150,11 +116,11 @@
         },
         {
           "file": "packages/boardui-core/package.json",
-          "hash": "12963655054098465119"
+          "hash": "14271726903110540890"
         },
         {
           "file": "packages/boardui-core/project.json",
-          "hash": "4025932095015665404"
+          "hash": "1979739725336298449"
         },
         {
           "file": "packages/boardui-core/src/index.ts",
@@ -213,345 +179,6 @@
           "hash": "11194536110028348959"
         }
       ],
-      "boardui-renderer": [
-        {
-          "file": "packages/boardui-renderer/README.md",
-          "hash": "4014962069681716467"
-        },
-        {
-          "file": "packages/boardui-renderer/eslint.config.mjs",
-          "hash": "7178783413170732866"
-        },
-        {
-          "file": "packages/boardui-renderer/jest.config.ts",
-          "hash": "7590988372277054616"
-        },
-        {
-          "file": "packages/boardui-renderer/package.json",
-          "hash": "9651327255665009189"
-        },
-        {
-          "file": "packages/boardui-renderer/project.json",
-          "hash": "2120879506895707936"
-        },
-        {
-          "file": "packages/boardui-renderer/src/index.ts",
-          "hash": "13184946483047774043"
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/bounds.ts",
-          "hash": "10577673719051454505"
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/color.helper.ts",
-          "hash": "10120366137268789787",
-          "deps": [
-            "boardui-core"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/element-id-provider.ts",
-          "hash": "11010274879111997600"
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/element-map.ts",
-          "hash": "10137681465592716707"
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/element-type.ts",
-          "hash": "18383253233380676429"
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/extensions/color.extensions.ts",
-          "hash": "16547706121919784377",
-          "deps": [
-            "boardui-parser"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/extensions/fill-desc.extensions.ts",
-          "hash": "10311186910659627068",
-          "deps": [
-            "boardui-parser"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/extensions/line-desc.extensions.ts",
-          "hash": "7153531761269243203",
-          "deps": [
-            "boardui-parser"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/extensions/polygon.extensions.ts",
-          "hash": "13694090813866573355",
-          "deps": [
-            "boardui-parser"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/extensions/xform.extensions.ts",
-          "hash": "2070394487793150655",
-          "deps": [
-            "boardui-parser"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/index.ts",
-          "hash": "7021826040111122857"
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/layers/component-layer.ts",
-          "hash": "8626854015025398231",
-          "deps": [
-            "boardui-parser"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/layers/conductor-layer.ts",
-          "hash": "4273390794543481944",
-          "deps": [
-            "boardui-parser"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/layers/drill-layer.ts",
-          "hash": "1838233787902373367",
-          "deps": [
-            "boardui-parser"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/layers/layer-base.ts",
-          "hash": "6049979761634892451",
-          "deps": [
-            "boardui-parser",
-            "boardui-core"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/layers/profile-layer.ts",
-          "hash": "8351520435360876262",
-          "deps": [
-            "boardui-parser"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/layers/silkscreen-layer.ts",
-          "hash": "4415237740505551138",
-          "deps": [
-            "boardui-parser"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/render-context.ts",
-          "hash": "2931136893380495603",
-          "deps": [
-            "boardui-core"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/renderer-provider.ts",
-          "hash": "9636030635842616244",
-          "deps": [
-            "boardui-parser"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/renderer.ts",
-          "hash": "18251319948576854914"
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/renderers/circle-renderer.ts",
-          "hash": "11012245325920906133",
-          "deps": [
-            "boardui-parser"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/renderers/component-renderer.ts",
-          "hash": "18267444645582884836",
-          "deps": [
-            "boardui-parser",
-            "boardui-core"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/renderers/contour-renderer.ts",
-          "hash": "5816822642277711980",
-          "deps": [
-            "boardui-parser"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/renderers/hole-renderer.ts",
-          "hash": "5971085324589991585",
-          "deps": [
-            "boardui-parser"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/renderers/index.ts",
-          "hash": "937692065685287922"
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/renderers/line-renderer.ts",
-          "hash": "9335630711740745686",
-          "deps": [
-            "boardui-parser"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/renderers/oval-renderer.ts",
-          "hash": "11626778409494552798",
-          "deps": [
-            "boardui-parser"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/renderers/pad-renderer.ts",
-          "hash": "6702349224956877298",
-          "deps": [
-            "boardui-parser",
-            "boardui-core"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/renderers/pin-renderer.ts",
-          "hash": "10551955643255332862",
-          "deps": [
-            "boardui-core",
-            "boardui-parser"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/renderers/polyline-renderer.ts",
-          "hash": "11698427500537765428",
-          "deps": [
-            "boardui-parser"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/renderers/profile-contour-renderer.ts",
-          "hash": "15666469195129911574",
-          "deps": [
-            "boardui-parser"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/renderers/rect-center-renderer.ts",
-          "hash": "11993803539086145990",
-          "deps": [
-            "boardui-parser"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/renderers/renderer-base.ts",
-          "hash": "9143623204846202444",
-          "deps": [
-            "boardui-core"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/reusables-provider.ts",
-          "hash": "16607705977042078096",
-          "deps": [
-            "boardui-parser"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/reusables-repository.ts",
-          "hash": "14863270440078576134",
-          "deps": [
-            "boardui-parser"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/src/lib/svg-pcb-renderer.ts",
-          "hash": "14635950794570243553",
-          "deps": [
-            "boardui-parser",
-            "boardui-core"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/test/circle-renderer.test.ts",
-          "hash": "1392772426653020308",
-          "deps": [
-            "boardui-parser",
-            "npm:@testing-library/jest-dom"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/test/component-renderer.test.ts",
-          "hash": "5608697803998253179",
-          "deps": [
-            "boardui-parser",
-            "npm:@testing-library/jest-dom"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/test/contour-renderer.test.ts",
-          "hash": "4314228365711304357",
-          "deps": [
-            "boardui-parser",
-            "npm:@testing-library/jest-dom"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/test/element-id-provider.mock.ts",
-          "hash": "10497730268205025768"
-        },
-        {
-          "file": "packages/boardui-renderer/test/line-renderer.test.ts",
-          "hash": "1955582537322432351",
-          "deps": [
-            "boardui-parser",
-            "npm:@testing-library/jest-dom"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/test/oval-renderer.test.ts",
-          "hash": "1500348497252100189",
-          "deps": [
-            "boardui-parser",
-            "npm:@testing-library/jest-dom"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/test/polygonUtils.ts",
-          "hash": "9708268727024573358",
-          "deps": [
-            "boardui-parser"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/test/render-properties.mock.ts",
-          "hash": "107628126233445911",
-          "deps": [
-            "boardui-core"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/test/reusables-provider.mock.ts",
-          "hash": "16537163931776038389",
-          "deps": [
-            "boardui-parser"
-          ]
-        },
-        {
-          "file": "packages/boardui-renderer/tsconfig.json",
-          "hash": "10294729341131714718"
-        },
-        {
-          "file": "packages/boardui-renderer/tsconfig.lib.json",
-          "hash": "17512648156706774563"
-        },
-        {
-          "file": "packages/boardui-renderer/tsconfig.spec.json",
-          "hash": "11002663856708366708"
-        }
-      ],
       "boardui-parser": [
         {
           "file": "packages/boardui-parser/README.md",
@@ -559,7 +186,7 @@
         },
         {
           "file": "packages/boardui-parser/eslint.config.mjs",
-          "hash": "7178783413170732866"
+          "hash": "5861625727830504929"
         },
         {
           "file": "packages/boardui-parser/jest.config.ts",
@@ -567,14 +194,14 @@
         },
         {
           "file": "packages/boardui-parser/package.json",
-          "hash": "17975816088128264820",
+          "hash": "17893311255850243173",
           "deps": [
-            "npm:sax-wasm@2.3.2"
+            "npm:sax-wasm"
           ]
         },
         {
           "file": "packages/boardui-parser/project.json",
-          "hash": "15314550274569099224"
+          "hash": "17793227063900257123"
         },
         {
           "file": "packages/boardui-parser/src/index.ts",
@@ -582,11 +209,15 @@
         },
         {
           "file": "packages/boardui-parser/src/lib/default-ipc-mappings.ts",
-          "hash": "3772606616408962505"
+          "hash": "18366163829898297316"
         },
         {
           "file": "packages/boardui-parser/src/lib/index.ts",
           "hash": "17712284232871490768"
+        },
+        {
+          "file": "packages/boardui-parser/src/lib/ipc/arc.ts",
+          "hash": "16133565308641693788"
         },
         {
           "file": "packages/boardui-parser/src/lib/ipc/assembly-drawing.ts",
@@ -642,7 +273,7 @@
         },
         {
           "file": "packages/boardui-parser/src/lib/ipc/content.ts",
-          "hash": "8706496423034539530"
+          "hash": "10570680186826650858"
         },
         {
           "file": "packages/boardui-parser/src/lib/ipc/contour.ts",
@@ -698,7 +329,7 @@
         },
         {
           "file": "packages/boardui-parser/src/lib/ipc/index.ts",
-          "hash": "693236110087105597"
+          "hash": "2153624123254959314"
         },
         {
           "file": "packages/boardui-parser/src/lib/ipc/ipc2581.ts",
@@ -711,6 +342,14 @@
         {
           "file": "packages/boardui-parser/src/lib/ipc/layer-function.ts",
           "hash": "15688287369253633363"
+        },
+        {
+          "file": "packages/boardui-parser/src/lib/ipc/layer-hole.ts",
+          "hash": "15654096172030182296"
+        },
+        {
+          "file": "packages/boardui-parser/src/lib/ipc/layer-pad.ts",
+          "hash": "1496115484030810739"
         },
         {
           "file": "packages/boardui-parser/src/lib/ipc/layer-ref.ts",
@@ -781,6 +420,10 @@
           "hash": "7573873872040281227"
         },
         {
+          "file": "packages/boardui-parser/src/lib/ipc/pad-stack.ts",
+          "hash": "18134753620987510425"
+        },
+        {
           "file": "packages/boardui-parser/src/lib/ipc/pad.ts",
           "hash": "1972685165840996245"
         },
@@ -810,7 +453,7 @@
         },
         {
           "file": "packages/boardui-parser/src/lib/ipc/poly-step-curve.ts",
-          "hash": "8401322755786095400"
+          "hash": "10744976578604676200"
         },
         {
           "file": "packages/boardui-parser/src/lib/ipc/poly-step-segment.ts",
@@ -862,19 +505,27 @@
         },
         {
           "file": "packages/boardui-parser/src/lib/ipc/standard-primitive.ts",
-          "hash": "13100543078708739597"
+          "hash": "13728717864578206875"
         },
         {
           "file": "packages/boardui-parser/src/lib/ipc/step-ref.ts",
           "hash": "11594256971915080411"
         },
         {
+          "file": "packages/boardui-parser/src/lib/ipc/step-repeat.ts",
+          "hash": "2699429270732633522"
+        },
+        {
           "file": "packages/boardui-parser/src/lib/ipc/step.ts",
-          "hash": "2465785027676164514"
+          "hash": "17104697265360316766"
         },
         {
           "file": "packages/boardui-parser/src/lib/ipc/textual.ts",
           "hash": "10445235306563057139"
+        },
+        {
+          "file": "packages/boardui-parser/src/lib/ipc/user-special.ts",
+          "hash": "13780544048895076743"
         },
         {
           "file": "packages/boardui-parser/src/lib/ipc/x-form.ts",
@@ -900,7 +551,7 @@
         },
         {
           "file": "packages/boardui-parser/src/lib/xml-to-js-parser.ts",
-          "hash": "8351011136190642492",
+          "hash": "7198973318286866004",
           "deps": [
             "npm:sax-wasm"
           ]
@@ -925,10 +576,138 @@
           "hash": "11194536110028348959"
         }
       ],
+      "boardui-angular": [
+        {
+          "file": "packages/boardui-angular/README.md",
+          "hash": "12220237317262513834"
+        },
+        {
+          "file": "packages/boardui-angular/eslint.config.mjs",
+          "hash": "3431280118633926170",
+          "deps": [
+            "npm:@eslint/eslintrc",
+            "npm:@eslint/js"
+          ]
+        },
+        {
+          "file": "packages/boardui-angular/jest.config.ts",
+          "hash": "13982518930793350947"
+        },
+        {
+          "file": "packages/boardui-angular/ng-package.json",
+          "hash": "11618453215143900989"
+        },
+        {
+          "file": "packages/boardui-angular/package.json",
+          "hash": "1176120095109174451",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:tslib"
+          ]
+        },
+        {
+          "file": "packages/boardui-angular/project.json",
+          "hash": "2916685700294926313"
+        },
+        {
+          "file": "packages/boardui-angular/src/index.ts",
+          "hash": "1351757171947091968"
+        },
+        {
+          "file": "packages/boardui-angular/src/lib/boardui.module.ts",
+          "hash": "11142941944845602999",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "packages/boardui-angular/src/lib/events/element-event.ts",
+          "hash": "911915451659974370"
+        },
+        {
+          "file": "packages/boardui-angular/src/lib/events/index.ts",
+          "hash": "13445954557945624091"
+        },
+        {
+          "file": "packages/boardui-angular/src/lib/events/render-done-event.ts",
+          "hash": "6210993976464310527",
+          "deps": [
+            "boardui-core",
+            "boardui-parser",
+            "boardui-renderer"
+          ]
+        },
+        {
+          "file": "packages/boardui-angular/src/lib/template/template-collection.ts",
+          "hash": "18194477780824636285"
+        },
+        {
+          "file": "packages/boardui-angular/src/lib/template/template.directive.ts",
+          "hash": "13771238029160056858",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "packages/boardui-angular/src/lib/template/template.ts",
+          "hash": "6795662327076079160"
+        },
+        {
+          "file": "packages/boardui-angular/src/lib/viewer.component/viewer.component.html",
+          "hash": "8228644078142669083"
+        },
+        {
+          "file": "packages/boardui-angular/src/lib/viewer.component/viewer.component.scss",
+          "hash": "18437240711031604426"
+        },
+        {
+          "file": "packages/boardui-angular/src/lib/viewer.component/viewer.component.spec.ts",
+          "hash": "16677625132303657064",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "packages/boardui-angular/src/lib/viewer.component/viewer.component.ts",
+          "hash": "15462649870504436103",
+          "deps": [
+            "npm:@angular/core",
+            "boardui-parser",
+            "boardui-core",
+            "boardui-renderer",
+            "npm:@angular/platform-browser",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "packages/boardui-angular/src/test-setup.ts",
+          "hash": "9531801021999427605",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "packages/boardui-angular/tsconfig.json",
+          "hash": "7184861466157324158"
+        },
+        {
+          "file": "packages/boardui-angular/tsconfig.lib.json",
+          "hash": "15304444604046903881"
+        },
+        {
+          "file": "packages/boardui-angular/tsconfig.lib.prod.json",
+          "hash": "14596712293513988079"
+        },
+        {
+          "file": "packages/boardui-angular/tsconfig.spec.json",
+          "hash": "1930986853382524452"
+        }
+      ],
       "boardui-demo": [
         {
           "file": "packages/boardui-demo/eslint.config.mjs",
-          "hash": "302553014245534969",
+          "hash": "4508669744489387738",
           "deps": [
             "npm:@eslint/eslintrc",
             "npm:@eslint/js"
@@ -940,7 +719,7 @@
         },
         {
           "file": "packages/boardui-demo/project.json",
-          "hash": "4185338562781652474"
+          "hash": "2808892427368712341"
         },
         {
           "file": "packages/boardui-demo/src/app/app.component.html",
@@ -963,7 +742,7 @@
         },
         {
           "file": "packages/boardui-demo/src/app/app.component.ts",
-          "hash": "175349024517983547",
+          "hash": "17836507489184634736",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -1099,132 +878,408 @@
           "hash": "1930986853382524452"
         }
       ],
-      "boardui-angular": [
+      "boardui-renderer": [
         {
-          "file": "packages/boardui-angular/README.md",
-          "hash": "12220237317262513834"
+          "file": "packages/boardui-renderer/README.md",
+          "hash": "4014962069681716467"
         },
         {
-          "file": "packages/boardui-angular/eslint.config.mjs",
-          "hash": "12455068231703709441",
+          "file": "packages/boardui-renderer/eslint.config.mjs",
+          "hash": "5861625727830504929"
+        },
+        {
+          "file": "packages/boardui-renderer/jest.config.ts",
+          "hash": "7590988372277054616"
+        },
+        {
+          "file": "packages/boardui-renderer/package.json",
+          "hash": "2654178519753248009"
+        },
+        {
+          "file": "packages/boardui-renderer/project.json",
+          "hash": "13326407645504035887"
+        },
+        {
+          "file": "packages/boardui-renderer/src/index.ts",
+          "hash": "13184946483047774043"
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/bounds.ts",
+          "hash": "10577673719051454505"
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/color.helper.ts",
+          "hash": "10120366137268789787",
+          "deps": [
+            "boardui-core"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/element-id-provider.ts",
+          "hash": "11010274879111997600"
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/element-map.ts",
+          "hash": "10137681465592716707"
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/element-type.ts",
+          "hash": "18383253233380676429"
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/extensions/color.extensions.ts",
+          "hash": "16547706121919784377",
+          "deps": [
+            "boardui-parser"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/extensions/fill-desc.extensions.ts",
+          "hash": "10311186910659627068",
+          "deps": [
+            "boardui-parser"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/extensions/line-desc.extensions.ts",
+          "hash": "7153531761269243203",
+          "deps": [
+            "boardui-parser"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/extensions/polygon.extensions.ts",
+          "hash": "16671324957009451126",
+          "deps": [
+            "boardui-parser"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/extensions/xform.extensions.ts",
+          "hash": "2070394487793150655",
+          "deps": [
+            "boardui-parser"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/index.ts",
+          "hash": "7021826040111122857"
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/layers/component-layer.ts",
+          "hash": "8626854015025398231",
+          "deps": [
+            "boardui-parser"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/layers/conductor-layer.ts",
+          "hash": "4273390794543481944",
+          "deps": [
+            "boardui-parser"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/layers/drill-layer.ts",
+          "hash": "1838233787902373367",
+          "deps": [
+            "boardui-parser"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/layers/layer-base.ts",
+          "hash": "6049979761634892451",
+          "deps": [
+            "boardui-parser",
+            "boardui-core"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/layers/profile-layer.ts",
+          "hash": "8351520435360876262",
+          "deps": [
+            "boardui-parser"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/layers/silkscreen-layer.ts",
+          "hash": "4415237740505551138",
+          "deps": [
+            "boardui-parser"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/render-context.ts",
+          "hash": "2931136893380495603",
+          "deps": [
+            "boardui-core"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/renderer-provider.ts",
+          "hash": "7481606600121776962",
+          "deps": [
+            "boardui-parser"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/renderer.ts",
+          "hash": "18251319948576854914"
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/renderers/arc-renderer.ts",
+          "hash": "9785396807640583266",
+          "deps": [
+            "boardui-parser"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/renderers/circle-renderer.ts",
+          "hash": "783952542333319668",
+          "deps": [
+            "boardui-parser"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/renderers/component-renderer.ts",
+          "hash": "3049167984272809785",
+          "deps": [
+            "boardui-parser",
+            "boardui-core"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/renderers/contour-renderer.ts",
+          "hash": "9148251065205280528",
+          "deps": [
+            "boardui-parser"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/renderers/hole-renderer.ts",
+          "hash": "5971085324589991585",
+          "deps": [
+            "boardui-parser"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/renderers/index.ts",
+          "hash": "12794795615084725292"
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/renderers/line-renderer.ts",
+          "hash": "7737402437372699620",
+          "deps": [
+            "boardui-parser"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/renderers/oval-renderer.ts",
+          "hash": "7675616633161250142",
+          "deps": [
+            "boardui-parser"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/renderers/pad-renderer.ts",
+          "hash": "6702349224956877298",
+          "deps": [
+            "boardui-parser",
+            "boardui-core"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/renderers/pin-renderer.ts",
+          "hash": "10551955643255332862",
+          "deps": [
+            "boardui-core",
+            "boardui-parser"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/renderers/polyline-renderer.ts",
+          "hash": "9410055073926841627",
+          "deps": [
+            "boardui-parser"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/renderers/profile-contour-renderer.ts",
+          "hash": "15666469195129911574",
+          "deps": [
+            "boardui-parser"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/renderers/rect-center-renderer.ts",
+          "hash": "5073268342039713268",
+          "deps": [
+            "boardui-parser"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/renderers/renderer-base.ts",
+          "hash": "9143623204846202444",
+          "deps": [
+            "boardui-core"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/renderers/user-special-renderer.ts",
+          "hash": "14259425887042567400",
+          "deps": [
+            "boardui-parser",
+            "boardui-core"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/reusables-provider.ts",
+          "hash": "16271396168432994919",
+          "deps": [
+            "boardui-parser"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/reusables-repository.ts",
+          "hash": "11364991649075680181",
+          "deps": [
+            "boardui-parser"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/src/lib/svg-pcb-renderer.ts",
+          "hash": "14225637706151966585",
+          "deps": [
+            "boardui-parser",
+            "boardui-core"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/test/circle-renderer.test.ts",
+          "hash": "1392772426653020308",
+          "deps": [
+            "boardui-parser",
+            "npm:@testing-library/jest-dom"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/test/component-renderer.test.ts",
+          "hash": "5608697803998253179",
+          "deps": [
+            "boardui-parser",
+            "npm:@testing-library/jest-dom"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/test/contour-renderer.test.ts",
+          "hash": "4314228365711304357",
+          "deps": [
+            "boardui-parser",
+            "npm:@testing-library/jest-dom"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/test/element-id-provider.mock.ts",
+          "hash": "10497730268205025768"
+        },
+        {
+          "file": "packages/boardui-renderer/test/line-renderer.test.ts",
+          "hash": "1955582537322432351",
+          "deps": [
+            "boardui-parser",
+            "npm:@testing-library/jest-dom"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/test/oval-renderer.test.ts",
+          "hash": "1500348497252100189",
+          "deps": [
+            "boardui-parser",
+            "npm:@testing-library/jest-dom"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/test/polygonUtils.ts",
+          "hash": "9708268727024573358",
+          "deps": [
+            "boardui-parser"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/test/render-properties.mock.ts",
+          "hash": "107628126233445911",
+          "deps": [
+            "boardui-core"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/test/reusables-provider.mock.ts",
+          "hash": "8787065709797029553",
+          "deps": [
+            "boardui-parser"
+          ]
+        },
+        {
+          "file": "packages/boardui-renderer/tsconfig.json",
+          "hash": "10294729341131714718"
+        },
+        {
+          "file": "packages/boardui-renderer/tsconfig.lib.json",
+          "hash": "17512648156706774563"
+        },
+        {
+          "file": "packages/boardui-renderer/tsconfig.spec.json",
+          "hash": "11002663856708366708"
+        }
+      ],
+      "boardui-demo-e2e": [
+        {
+          "file": "packages/boardui-demo-e2e/cypress.config.ts",
+          "hash": "10128070837426886452",
+          "deps": [
+            "npm:cypress",
+            "npm:@nx/cypress"
+          ]
+        },
+        {
+          "file": "packages/boardui-demo-e2e/eslint.config.mjs",
+          "hash": "8702412158878726897",
           "deps": [
             "npm:@eslint/eslintrc",
             "npm:@eslint/js"
           ]
         },
         {
-          "file": "packages/boardui-angular/jest.config.ts",
-          "hash": "13982518930793350947"
+          "file": "packages/boardui-demo-e2e/project.json",
+          "hash": "16677912478126493807"
         },
         {
-          "file": "packages/boardui-angular/ng-package.json",
-          "hash": "11618453215143900989"
+          "file": "packages/boardui-demo-e2e/src/assets/testcase3-RevC-Assembly.xml",
+          "hash": "13718509918206281054"
         },
         {
-          "file": "packages/boardui-angular/package.json",
-          "hash": "11504713769454636773",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core",
-            "npm:tslib"
-          ]
+          "file": "packages/boardui-demo-e2e/src/e2e/app.cy.ts",
+          "hash": "4936148506865692904"
         },
         {
-          "file": "packages/boardui-angular/project.json",
-          "hash": "7637229816986947241"
+          "file": "packages/boardui-demo-e2e/src/fixtures/example.json",
+          "hash": "17341819486505642070"
         },
         {
-          "file": "packages/boardui-angular/src/index.ts",
-          "hash": "1351757171947091968"
+          "file": "packages/boardui-demo-e2e/src/support/app.po.ts",
+          "hash": "9029757912918485685"
         },
         {
-          "file": "packages/boardui-angular/src/lib/boardui.module.ts",
-          "hash": "11142941944845602999",
-          "deps": [
-            "npm:@angular/core"
-          ]
+          "file": "packages/boardui-demo-e2e/src/support/commands.ts",
+          "hash": "11031723810997510506"
         },
         {
-          "file": "packages/boardui-angular/src/lib/events/element-event.ts",
-          "hash": "911915451659974370"
+          "file": "packages/boardui-demo-e2e/src/support/e2e.ts",
+          "hash": "15928825062325902088"
         },
         {
-          "file": "packages/boardui-angular/src/lib/events/index.ts",
-          "hash": "13445954557945624091"
-        },
-        {
-          "file": "packages/boardui-angular/src/lib/events/render-done-event.ts",
-          "hash": "6210993976464310527",
-          "deps": [
-            "boardui-core",
-            "boardui-parser",
-            "boardui-renderer"
-          ]
-        },
-        {
-          "file": "packages/boardui-angular/src/lib/template/template-collection.ts",
-          "hash": "18194477780824636285"
-        },
-        {
-          "file": "packages/boardui-angular/src/lib/template/template.directive.ts",
-          "hash": "13771238029160056858",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "packages/boardui-angular/src/lib/template/template.ts",
-          "hash": "6795662327076079160"
-        },
-        {
-          "file": "packages/boardui-angular/src/lib/viewer.component/viewer.component.html",
-          "hash": "8228644078142669083"
-        },
-        {
-          "file": "packages/boardui-angular/src/lib/viewer.component/viewer.component.scss",
-          "hash": "18437240711031604426"
-        },
-        {
-          "file": "packages/boardui-angular/src/lib/viewer.component/viewer.component.spec.ts",
-          "hash": "16677625132303657064",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "packages/boardui-angular/src/lib/viewer.component/viewer.component.ts",
-          "hash": "15462649870504436103",
-          "deps": [
-            "npm:@angular/core",
-            "boardui-parser",
-            "boardui-core",
-            "boardui-renderer",
-            "npm:@angular/platform-browser",
-            "npm:rxjs"
-          ]
-        },
-        {
-          "file": "packages/boardui-angular/src/test-setup.ts",
-          "hash": "9531801021999427605",
-          "deps": [
-            "npm:jest-preset-angular"
-          ]
-        },
-        {
-          "file": "packages/boardui-angular/tsconfig.json",
-          "hash": "7184861466157324158"
-        },
-        {
-          "file": "packages/boardui-angular/tsconfig.lib.json",
-          "hash": "15304444604046903881"
-        },
-        {
-          "file": "packages/boardui-angular/tsconfig.lib.prod.json",
-          "hash": "14596712293513988079"
-        },
-        {
-          "file": "packages/boardui-angular/tsconfig.spec.json",
-          "hash": "1930986853382524452"
+          "file": "packages/boardui-demo-e2e/tsconfig.json",
+          "hash": "15819154737716378212"
         }
       ]
     }

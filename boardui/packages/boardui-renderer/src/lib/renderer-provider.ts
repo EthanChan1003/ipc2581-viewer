@@ -1,5 +1,6 @@
 import { Renderer } from './renderer';
 import {
+  Arc,
   Circle,
   Component,
   Contour,
@@ -11,8 +12,10 @@ import {
   Polyline,
   RectCenter,
   StandardPrimitive,
+  UserSpecial,
 } from 'boardui-parser';
 import {
+  ArcRenderer,
   ContourRenderer,
   PolylineRenderer,
   CircleRenderer,
@@ -25,6 +28,7 @@ import {
   LineRenderer,
 } from './renderers';
 import { PadRenderer } from './renderers/pad-renderer';
+import { UserSpecialRenderer } from './renderers/user-special-renderer';
 
 export class RendererProvider {
   // eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
@@ -39,6 +43,8 @@ export class RendererProvider {
     [Pad.prototype.constructor, new PadRenderer()],
     [Oval.prototype.constructor, new OvalRenderer()],
     [Line.prototype.constructor, new LineRenderer()],
+    [Arc.prototype.constructor, new ArcRenderer()],
+    [UserSpecial.prototype.constructor, new UserSpecialRenderer()],
   ]);
 
   private static _profileContourRenderer = new ProfileContourRenderer();

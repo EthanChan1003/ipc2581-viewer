@@ -52,7 +52,7 @@ export function getSVGArc(curve: PolyStepCurve, lastStep: PolyBegin): string {
   const start: Point = { x: lastStep.x, y: lastStep.y };
   const center: Point = { x: curve.centerX, y: curve.centerY };
   const end: Point = { x: curve.x, y: curve.y };
-  const clockwise = curve.clockwise === 'true';
+  const clockwise = curve.clockwise === true || curve.clockwise === ('true' as any);
   const distance = getDistance(end, center);
 
   const [startAngle, endAngle] = getAngles(start, center, end);

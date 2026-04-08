@@ -25,36 +25,36 @@ export class ReusablesRepository implements ReusablesProvider {
       _ipc.ecad.cadData.layers.map((layer) => [layer.name, layer])
     );
     this._colors = new Map(
-      _ipc.content.dictionaryColor.entries.map(
+      _ipc.content.dictionaryColor?.entries?.map(
         (colorEntry: DictionaryEntry<Color>) => [
           colorEntry.id,
           colorEntry.content,
         ]
-      )
+      ) ?? []
     );
     this._lineDescs = new Map(
-      _ipc.content.dictionaryLineDesc.entries.map(
+      _ipc.content.dictionaryLineDesc?.entries?.map(
         (lineDescEntry: DictionaryEntry<LineDesc>) => [
           lineDescEntry.id,
           lineDescEntry.content,
         ]
-      )
+      ) ?? []
     );
     this._fillDescs = new Map(
-      _ipc.content.dictionaryFillDesc.entries.map(
+      _ipc.content.dictionaryFillDesc?.entries?.map(
         (fillDescEntry: DictionaryEntry<FillDesc>) => [
           fillDescEntry.id,
           fillDescEntry.content,
         ]
-      )
+      ) ?? []
     );
     this._primitives = new Map(
-      _ipc.content.dictionaryStandard.entries.map(
+      _ipc.content.dictionaryStandard?.entries?.map(
         (primitiveEntry: DictionaryEntry<StandardPrimitive>) => [
           primitiveEntry.id,
           primitiveEntry.content,
         ]
-      )
+      ) ?? []
     );
     this._packages = new Map(
       _ipc.ecad.cadData.steps.flatMap((step: Step) =>
@@ -79,20 +79,12 @@ export class ReusablesRepository implements ReusablesProvider {
     return color;
   }
 
-  public getLineDescById(lineDescId: string): LineDesc {
-    const lineDesc = this._lineDescs.get(lineDescId);
-    if (!lineDesc) {
-      throw new Error(`Line descriptor '${lineDescId}' not found.`);
-    }
-    return lineDesc;
+  public getLineDescById(lineDescId: string): LineDesc | null {
+    return this._lineDescs.get(lineDescId) ?? null;
   }
 
-  public getFillDescById(fillDescId: string): FillDesc {
-    const fillDesc = this._fillDescs.get(fillDescId);
-    if (!fillDesc) {
-      throw new Error(`Fill descriptor '${fillDescId}' not found.`);
-    }
-    return fillDesc;
+  public getFillDescById(fillDescId: string): FillDesc | null {
+    return this._fillDescs.get(fillDescId) ?? null;
   }
 
   public getPrimitiveById(primitiveId: string): StandardPrimitive {

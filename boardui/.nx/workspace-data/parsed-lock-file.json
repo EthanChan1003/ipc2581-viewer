@@ -13288,9 +13288,9 @@
       "type": "npm",
       "name": "npm:sax-wasm",
       "data": {
-        "version": "3.0.5",
+        "version": "2.3.2",
         "packageName": "sax-wasm",
-        "hash": "sha512-tyz7oR2Ke9iZeiyJv8qjkEYeZ7S3y0pS2FXuUC6TH1xRT8WPlUUHJI+f5v0+jzBnuc6+WbPpjfyxlcbXtNSMHQ=="
+        "hash": "sha512-Z+AkZ0/t3GHEewfsyoLFsM8kG+bWfYqP3+LyGo+wgzPZoEFLJk/PzrhIDzaihxMRsLs/qdwV0s5S2YhtOKf/8g=="
       }
     },
     "npm:saxes": {

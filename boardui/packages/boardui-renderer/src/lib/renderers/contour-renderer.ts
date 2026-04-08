@@ -24,12 +24,14 @@ export class ContourRenderer extends RendererBase<Contour> {
         part.polygon.fillDesc instanceof FillDescRef
           ? reusablesProvider.getFillDescById(part.polygon.fillDesc.id)
           : part.polygon.fillDesc;
-      const fillDescAttributes = getFillDescSVGAttributes(
-        fillDesc,
-        reusablesProvider
-      );
-      for (const fillDescAttribute of fillDescAttributes) {
-        partElement.setAttribute(...fillDescAttribute);
+      if (fillDesc) {
+        const fillDescAttributes = getFillDescSVGAttributes(
+          fillDesc,
+          reusablesProvider
+        );
+        for (const fillDescAttribute of fillDescAttributes) {
+          partElement.setAttribute(...fillDescAttribute);
+        }
       }
     }
   }

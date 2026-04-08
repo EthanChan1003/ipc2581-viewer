@@ -1,6 +1,7 @@
 import {
   Location,
   Set,
+  Arc,
   AssemblyDrawing,
   CadData,
   Circle,
@@ -18,6 +19,8 @@ import {
   Hole,
   Layer,
   LayerFeature,
+  LayerHole,
+  LayerPad,
   LayerRef,
   LineDesc,
   LineDescRef,
@@ -26,6 +29,7 @@ import {
   Outline,
   Package,
   Pad,
+  PadStack,
   Pin,
   PinRef,
   PolyBegin,
@@ -38,6 +42,8 @@ import {
   StandardPrimitiveRef,
   Step,
   StepRef,
+  StepRepeat,
+  UserSpecial,
   XForm,
   IPC2581,
   FunctionMode,
@@ -99,7 +105,7 @@ const defaultIPCMappings = new Array<XMLtoJSMapping>(
   ],
   ['AssemblyDrawing', AssemblyDrawing.prototype, ['assemblyDrawing']],
   ['Marking', Marking.prototype, ['marking']],
-  ['DictionaryUser', Dictionary.prototype, ['dictionaryStandard']],
+  ['DictionaryUser', Dictionary.prototype, ['dictionaryUser']],
   ['EntryUser', DictionaryEntry.prototype, ['entries']],
   ['DictionaryStandard', Dictionary.prototype, ['dictionaryStandard']],
   ['EntryStandard', DictionaryEntry.prototype, ['entries']],
@@ -114,6 +120,7 @@ const defaultIPCMappings = new Array<XMLtoJSMapping>(
   ['Xform', XForm.prototype, ['xform']],
   ['Hole', Hole.prototype, ['holes']],
   ['StepRef', StepRef.prototype, ['stepRefs']],
+  ['StepRepeat', StepRepeat.prototype, ['stepRepeats']],
   ['Span', Span.prototype, ['span']],
   ['Pad', Pad.prototype, ['pads']],
   [
@@ -130,7 +137,12 @@ const defaultIPCMappings = new Array<XMLtoJSMapping>(
   ['RefDes', RefDes.prototype, ['refDes']],
   ['Characteristics', Characteristics.prototype, ['characteristics']],
   ['FunctionMode', FunctionMode.prototype, ['functionMode']],
-  ['Line', Line.prototype, ['features']]
+  ['Line', Line.prototype, ['features']],
+  ['Arc', Arc.prototype, ['features']],
+  ['PadStack', PadStack.prototype, ['padStacks']],
+  ['LayerHole', LayerHole.prototype, ['layerHoles']],
+  ['LayerPad', LayerPad.prototype, ['layerPads']],
+  ['UserSpecial', UserSpecial.prototype, ['features']]
 );
 
 export const DEFAULT_IPC_MAPPINGS = defaultIPCMappings;

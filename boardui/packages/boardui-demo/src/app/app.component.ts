@@ -50,7 +50,31 @@ export class AppComponent implements AfterContentInit {
   loading = false;
 
   get step(): string | null {
-    return this.pcb?.content.stepRefs.at(0)?.name ?? null;
+    if (!this.pcb || !this.pcb.ecad?.cadData) return null;
+    console.log(`[StepSelect] Total steps: ${this.pcb.ecad.cadData.steps.length}`);
+    this.pcb.ecad.cadData.steps.forEach(s => {
+      let featureCount = 0, padCount = 0, holeCount = 0;
+      s.layerFeatures.forEach(lf => {
+        lf.sets.forEach(set => {
+          featureCount += set.features?.length ?? 0;
+          padCount += set.pads?.length ?? 0;
+          holeCount += set.holes?.length ?? 0;
+        });
+      });
+      console.log(`  - Step "${s.name}": features=${featureCount}, pads=${padCount}, holes=${holeCount}, stepRepeats=${s.stepRepeats?.length ?? 0}, layerFeaturesCount=${s.layerFeatures.length}`);
+    });
+    
+    // For panel files, prefer the parent Step (which has StepRepeat) 
+    // so the renderer can expand sub-boards
+    const panelStep = this.pcb.ecad.cadData.steps.find(s => (s.stepRepeats?.length ?? 0) > 0);
+    if (panelStep) {
+      console.log(`[StepSelect] Detected panel file, selecting parent Step: "${panelStep.name}"`);
+      return panelStep.name;
+    }
+    
+    const selectedStep = this.pcb.content.stepRefs.at(0)?.name ?? null;
+    console.log(`[StepSelect] Selected step: "${selectedStep}"`);
+    return selectedStep;
   }
 
   constructor(

@@ -22,8 +22,10 @@ export class PolylineRenderer extends RendererBase<Polyline> {
           ? reusablesProvider.getLineDescById(part.lineDesc.id)
           : (part.lineDesc as LineDesc);
 
-      for (const lineDescAttribute of getLineDescSVGAttributes(lineDesc)) {
-        partElement.setAttribute(...lineDescAttribute);
+      if (lineDesc) {
+        for (const lineDescAttribute of getLineDescSVGAttributes(lineDesc)) {
+          partElement.setAttribute(...lineDescAttribute);
+        }
       }
     }
 

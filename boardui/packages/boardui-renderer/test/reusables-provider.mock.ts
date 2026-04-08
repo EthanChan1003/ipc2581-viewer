@@ -23,7 +23,7 @@ export const ReusablesProviderMock: ReusablesProvider = {
     throw new Error('Function not implemented.');
   },
   getLineDescById: function (lineDescId: string) {
-    throw new Error('Function not implemented.');
+    return null;
   },
   getPrimitiveById: function (primitiveId: string) {
     throw new Error('Function not implemented.');

@@ -8,3 +8,4 @@ export * from './profile-contour-renderer';
 export * from './rect-center-renderer';
 export * from './oval-renderer';
 export * from './line-renderer';
+export * from './arc-renderer';

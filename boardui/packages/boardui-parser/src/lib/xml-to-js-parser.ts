@@ -34,6 +34,10 @@ export class XmlToJsParser<TResult> {
             const emptyObj = new prototype.constructor();
             if (Array.isArray(obj[property])) {
               Array.prototype.push.call(obj[property], emptyObj);
+              // Debug: Log LayerFeature additions
+              if (tagName === 'LayerFeature' && obj.name) {
+                console.log(`[Parser] LayerFeature added to Step "${obj.name}", total: ${obj[property].length}`);
+              }
             } else if (obj[property]) {
               Array.prototype.push.call(stack, obj[property]);
               return;
@@ -43,6 +47,14 @@ export class XmlToJsParser<TResult> {
             Array.prototype.push.call(stack, emptyObj);
             return;
           }
+        }
+        // IMPORTANT: Push null so that the CloseTag pop is balanced.
+        // Only do this when there were properties to search but none matched.
+        // Tags with empty properties (e.g. IPC-2581) are intentional "transparent
+        // containers" - they should NOT push, so their CloseTag pop consumes the
+        // surrounding context exactly as designed.
+        if (properties.length > 0) {
+          Array.prototype.push.call(stack, null);
         }
         console.debug('Cannot find property for ' + tagName);
       },
